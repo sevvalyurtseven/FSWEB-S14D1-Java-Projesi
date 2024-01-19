@@ -10,4 +10,8 @@ public class Circle {
             this.radius = radius;
         }
     }
+
+    public double getRadius() {
+        return radius;
+    }
 }
