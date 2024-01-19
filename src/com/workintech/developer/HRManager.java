@@ -71,6 +71,8 @@ public class HRManager extends Employee {
     @Override
     public String toString() {
         return "HRManager{" +
+                "name=" + getName() +
+                "salary=" + getSalary() +
                 "juniorDevelopers=" + Arrays.toString(juniorDevelopers) +
                 ", midDevelopers=" + Arrays.toString(midDevelopers) +
                 ", seniorDevelopers=" + Arrays.toString(seniorDevelopers) +
