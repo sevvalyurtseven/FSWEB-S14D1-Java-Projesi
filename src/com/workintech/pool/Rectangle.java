@@ -17,5 +17,9 @@ public class Rectangle {
         return length;
     }
 
+    public int getArea(){
+        return this.width * this.length;
+    }
+
 
 }
