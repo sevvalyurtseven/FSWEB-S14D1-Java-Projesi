@@ -1,5 +1,9 @@
 import com.workintech.cylinder.Circle;
 import com.workintech.cylinder.Cylinder;
+import com.workintech.developer.HRManager;
+import com.workintech.developer.JuniorDeveloper;
+import com.workintech.developer.MidDeveloper;
+import com.workintech.developer.SeniorDeveloper;
 import com.workintech.pool.Cuboid;
 import com.workintech.pool.Rectangle;
 
@@ -34,5 +38,39 @@ public class Main {
         System.out.println("cuboid.area= " + cuboid.getArea());
         System.out.println("cuboid.height= " + cuboid.getHeight());
         System.out.println("cuboid.volume= " + cuboid.getVolume());
+
+        //DEVELOPER COMPANY ICIN:
+
+        JuniorDeveloper juniorDeveloper1 = new JuniorDeveloper(1, "Sevval");
+        JuniorDeveloper juniorDeveloper2 = new JuniorDeveloper(2, "Ozge");
+
+        juniorDeveloper1.work();
+        juniorDeveloper2.work();
+
+        System.out.println(juniorDeveloper1);
+        System.out.println(juniorDeveloper2);
+
+        MidDeveloper midDeveloper = new MidDeveloper(1, "Alptug");
+
+        midDeveloper.work();
+
+        System.out.println(midDeveloper);
+
+        SeniorDeveloper seniorDeveloper = new SeniorDeveloper(1, "Fatih");
+
+        seniorDeveloper.work();
+        System.out.println(seniorDeveloper);
+
+        HRManager hrManager = new HRManager(1, "Gokhan", new JuniorDeveloper[5],
+                new MidDeveloper[2], new SeniorDeveloper[1]);
+
+        hrManager.work();
+        System.out.println(hrManager);
+        hrManager.addEmployee(0, juniorDeveloper1);
+        hrManager.addEmployee(1, juniorDeveloper2);
+        hrManager.addEmployee(0, midDeveloper);
+        hrManager.addEmployee(0, seniorDeveloper);
+
+        System.out.println(hrManager);
     }
 }
