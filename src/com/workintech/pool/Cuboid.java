@@ -10,4 +10,8 @@ public class Cuboid extends Rectangle{
     public int getHeight() {
         return height;
     }
+
+    public int getVolume(){
+        return super.getArea()*this.height;
+    }
 }
