@@ -6,4 +6,8 @@ public class Cuboid extends Rectangle{
         super(width, length);
         this.height = (height < 0) ? 0 : height;
     }
+
+    public int getHeight() {
+        return height;
+    }
 }
