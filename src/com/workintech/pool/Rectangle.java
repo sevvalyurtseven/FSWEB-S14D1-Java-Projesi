@@ -2,10 +2,20 @@ package com.workintech.pool;
 
 public class Rectangle {
     private int width;
-    private int height;
+    private int length;
 
-    public Rectangle(int width, int height) {
+    public Rectangle(int width, int length) {
         this.width = (width < 0) ? 0 : width;
-        this.height = (height < 0) ? 0 : height;
+        this.length = (length < 0) ? 0 : length;
     }
+
+    public int getWidth() {
+        return width;
+    }
+
+    public int getLength() {
+        return length;
+    }
+
+
 }
