@@ -1,5 +1,7 @@
 package com.workintech.developer;
 
+import java.util.Arrays;
+
 public class HRManager extends Employee {
     private JuniorDeveloper[] juniorDevelopers;
     private MidDeveloper[] midDevelopers;
@@ -64,5 +66,14 @@ public class HRManager extends Employee {
     public void work() {
         setSalary(Salaries.HRMANAGER.getSalary());
         System.out.println(getName() + " HR Manager starts to working");
+    }
+
+    @Override
+    public String toString() {
+        return "HRManager{" +
+                "juniorDevelopers=" + Arrays.toString(juniorDevelopers) +
+                ", midDevelopers=" + Arrays.toString(midDevelopers) +
+                ", seniorDevelopers=" + Arrays.toString(seniorDevelopers) +
+                '}';
     }
 }
