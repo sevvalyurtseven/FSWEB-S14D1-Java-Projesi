@@ -1,6 +1,9 @@
 package com.workintech.developer;
 
 public class HRManager extends Employee {
+    private JuniorDeveloper[] juniorDevelopers;
+    private MidDeveloper[] midDevelopers;
+    private SeniorDeveloper[] seniorDevelopers;
     public HRManager(long id, String name) {
         super(id, name);
     }
