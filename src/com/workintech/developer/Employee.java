@@ -34,4 +34,8 @@ public class Employee {
     public void setSalary(double salary) {
         this.salary = salary;
     }
+
+    public void work(){
+        System.out.println("Employee starts to working");
+    }
 }
