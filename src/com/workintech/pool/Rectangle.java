@@ -1,8 +1,8 @@
 package com.workintech.pool;
 
 public class Rectangle {
-    private int width;
-    private int length;
+    private final int width;
+    private final int length;
 
     public Rectangle(int width, int length) {
         this.width = (width < 0) ? 0 : width;
